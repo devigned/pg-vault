@@ -1,0 +1,5 @@
+[package]
+
+name = "pg-vault"
+version = "0.0.1"
+authors = ["David Justice <david@devigned.com>"]
