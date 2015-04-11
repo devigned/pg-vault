@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+sudo su postgres -c '/Library/PostgreSQL/9.4/bin/pg_ctl -D /Library/PostgreSQL/9.4/data stop -m fast'
+sudo rm /Library/PostgreSQL/9.4/data/test.txt
+cargo build
+sudo su postgres -c '/Library/PostgreSQL/9.4/bin/pg_ctl -D /Library/PostgreSQL/9.4/data start'

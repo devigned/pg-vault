@@ -4,6 +4,9 @@ name = "pg_vault"
 version = "0.0.1"
 authors = ["David Justice <david@devigned.com>"]
 
+[dependencies]
+rustc-serialize = "*"
+
 [dependencies.vault]
 git = "https://github.com/devigned/rust-key-vault.git"
 
