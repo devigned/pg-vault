@@ -2,7 +2,8 @@
 name = "pg_vault"
 version = "0.0.1"
 dependencies = [
- "postgres_extension 0.0.1",
+ "lazy_static 0.1.10 (registry+https://github.com/rust-lang/crates.io-index)",
+ "postgres_extension 0.0.1 (git+https://github.com/devigned/postgres-extension.rs.git)",
  "rustc-serialize 0.3.12 (registry+https://github.com/rust-lang/crates.io-index)",
  "vault 0.0.1 (git+https://github.com/devigned/rust-key-vault.git)",
 ]
@@ -135,6 +136,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 [[package]]
 name = "postgres_extension"
 version = "0.0.1"
+source = "git+https://github.com/devigned/postgres-extension.rs.git#0108b3aa14db8ac84e342380fc70f0bab6313400"
 
 [[package]]
 name = "rand"

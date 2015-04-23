@@ -6,13 +6,14 @@ authors = ["David Justice <david@devigned.com>"]
 
 [dependencies]
 rustc-serialize = "*"
+lazy_static = "0.1.*"
 
 [dependencies.vault]
 git = "https://github.com/devigned/rust-key-vault.git"
 
 [dependencies.postgres_extension]
-path = "../postgres-extension.rs"
-# git = "https://github.com/devigned/postgres-extension.rs.git"
+git = "https://github.com/devigned/postgres-extension.rs.git"
+# path = "../postgres-extension.rs"
 
 [lib]
 name = "pg_vault"
